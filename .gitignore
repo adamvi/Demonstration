@@ -2,4 +2,7 @@
 .Rdata
 .txt
 .zip
-/Data
+/Data/*.Rdata
+/Data/*.txt
+/Data/*.zip
+/Data/SchoolView/
