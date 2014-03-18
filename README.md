@@ -3,7 +3,7 @@ Demonstration
 
 SGP source code and documentation associated with Demonstration SGP analyses. Output follows from running *Demonstration_SGP.R*.
 
-```R
+```coffee
 ### Load SGP Package
 
 require(SGP)
