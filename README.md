@@ -1,29 +1,23 @@
 Demonstration
 =============
 
-SGP source code and documentation associated with Demonstration SGP analyses. Output follows from running *Demonstration_SGP.R*.
+SGP analysis source code & documentation
+-----------------------------------------
 
-```coffee
-### Load SGP Package
+[![Join the chat at https://gitter.im/CenterForAssessment/Demonstration](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/Demonstration?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](http://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/Demonstration/blob/master/LICENSE.md)
 
-require(SGP)
-options(error=recover)
+### Analysis source code
 
+Source code provided utilizes the [**R** software environment](http://cran.r-project.org/) in conjunction with the [SGP Package](https://github.com/CenterForAssessment/SGP).
 
-### abcSGP
+### Analysis documentation
 
-Demonstration_SGP <- abcSGP(
-			sgp_object=sgpData_LONG,
-			data_supplementary=list(INSTRUCTOR_NUMBER=sgpData_INSTRUCTOR_NUMBER),
-			sgPlot.demo.report=TRUE,
-			parallel.config=list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=4, BASELINE_PERCENTILES=4, PROJECTIONS=4, LAGGED_PROJECTIONS=4, SUMMARY=4, GA_PLOTS=4, SG_PLOTS=1)))
+Detailed documentation and instructions associated with the SGP analyses conducted for Demonstration are available on the [Demonstration SGP Analysis Wiki](https://github.com/CenterForAssessment/Demonstration/wiki). 
+For more basic information on how to run SGP analyses please see the [SGP Package Wiki](https://github.com/CenterForAssessment/SGP/wiki/Home) which contains instructions on how to 
+prepare data and run SGP analyses.
 
-### Output SchoolView tables
+### Prepared with :heart: by:
 
-outputSGP(Demonstration_SGP, output.type="SchoolView")
+* [Damian Betebenner](https://github.com/dbetebenner)
+* [Adam VanIwaarden](https://github.com/adamvi)
 
-
-### Save results
-
-save(Demonstration_SGP, file="Data/Demonstration_SGP.Rdata")
-```
